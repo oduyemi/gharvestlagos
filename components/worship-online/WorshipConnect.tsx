@@ -1,12 +1,7 @@
 
 "use client";
-
 import { motion, useReducedMotion } from "framer-motion";
-import {
-  ArrowRightOutlined,
-  HeartFilled,
-  YoutubeFilled,
-} from "@ant-design/icons";
+import { ArrowRightOutlined, HeartFilled, YoutubeFilled } from "@ant-design/icons";
 
 export const WorshipConnect = () => {
   const shouldReduceMotion = useReducedMotion();

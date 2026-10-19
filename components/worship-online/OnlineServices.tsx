@@ -233,16 +233,10 @@ export const OnlineServices = () => {
       />
 
       <div className="gh-container relative mx-auto w-full px-5 sm:px-8 md:px-10 lg:px-12 xl:px-14">
-        {/* Section introduction */}
         <motion.div
           {...animationProps}
           className="mb-10 max-w-3xl sm:mb-14"
         >
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#0b2265]/10 bg-white px-4 py-2 text-xs font-bold uppercase tracking-[0.16em] text-[#0b2265] shadow-sm sm:text-sm">
-            <span className="h-2 w-2 rounded-full bg-[#00a859]" />
-            Watch anytime, anywhere
-          </div>
-
           <h2 className="max-w-2xl text-3xl font-bold leading-tight tracking-tight text-[#0b2265] sm:text-4xl lg:text-5xl">
             Messages that stay with you.
             <span className="mt-1 block text-[#00a3e0]">
