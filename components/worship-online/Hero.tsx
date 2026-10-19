@@ -20,7 +20,6 @@ export const WorshipHero = () => {
         }}
       />
 
-      {/* Layered overlays: stronger behind copy, lighter over the image */}
       <div
         aria-hidden="true"
         className="absolute inset-0 -z-20 bg-[#071744]/35"
@@ -36,7 +35,6 @@ export const WorshipHero = () => {
         className="absolute inset-0 -z-10 bg-gradient-to-t from-[#071744] via-transparent to-[#071744]/35"
       />
 
-      {/* Soft brand lighting */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -right-24 top-1/4 -z-10 h-64 w-64 rounded-full bg-brand-cyan/15 blur-[90px] sm:h-96 sm:w-96 sm:blur-[120px]"
