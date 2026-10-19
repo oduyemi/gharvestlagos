@@ -59,7 +59,7 @@ export const WorshipHero = () => {
               </span>
 
               <span className="truncate text-[10px] font-bold uppercase tracking-[0.16em] text-white/90 sm:text-xs sm:tracking-[0.2em]">
-                Global Harvest Church
+                Global Harvest Church, Maryland, Lagos
               </span>
             </div>
 
@@ -183,11 +183,6 @@ export const WorshipHero = () => {
                 <ArrowRightOutlined className="shrink-0 text-brand-gold transition-transform duration-300 group-hover:translate-x-1" />
               </a>
             </div>
-
-            <p className="mt-5 text-center text-[10px] font-semibold tracking-[0.18em] text-white/70 sm:text-xs sm:tracking-[0.2em]">
-              LOVE <span className="mx-1 text-brand-gold">•</span> FAITH
-              <span className="mx-1 text-brand-gold">•</span> PURPOSE
-            </p>
           </motion.div>
         </div>
       </div>
