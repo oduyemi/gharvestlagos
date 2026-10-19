@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Header } from "@/components/layout/Header";
-import { ConditionalFooter } from "@/components/layout/ConditionalFooter";
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
 
@@ -26,11 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={cn("font-sans", geist.variable)}>
-      <body>
-        <Header />
-        {children}
-        <ConditionalFooter />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
