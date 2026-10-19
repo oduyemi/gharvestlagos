@@ -1,7 +1,7 @@
 
 "use client";
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowRightOutlined, HeartFilled, YoutubeFilled } from "@ant-design/icons";
+import { ArrowRightOutlined, YoutubeFilled } from "@ant-design/icons";
 
 export const WorshipConnect = () => {
   const shouldReduceMotion = useReducedMotion();
@@ -35,7 +35,6 @@ export const WorshipConnect = () => {
           {/* Main content */}
           <div className="max-w-xl">
             <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.16em] text-white backdrop-blur-sm sm:text-xs">
-              <HeartFilled className="text-brand-gold" />
               You belong here
             </div>
 
@@ -88,10 +87,6 @@ export const WorshipConnect = () => {
           >
             <div className="rounded-xl border border-white/20 bg-brand-blue-dark/55 p-5 shadow-xl shadow-black/10 backdrop-blur-md sm:p-6">
               <div className="flex items-center gap-3">
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-gold/15 text-brand-gold">
-                  <HeartFilled />
-                </span>
-
                 <div>
                   <p className="text-sm font-bold text-white">
                     A place to grow

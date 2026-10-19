@@ -1,6 +1,6 @@
 "use client";
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowRightOutlined, HeartFilled, YoutubeFilled } from "@ant-design/icons";
+import { ArrowRightOutlined, YoutubeFilled } from "@ant-design/icons";
 
 
 export const ContactConnect = () => {
@@ -26,7 +26,6 @@ export const ContactConnect = () => {
         >
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-brand-gold">
-              <HeartFilled />
               You belong here
             </div>
 

@@ -1,6 +1,6 @@
 "use client";
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowDownOutlined, HeartFilled } from "@ant-design/icons";
+import { ArrowDownOutlined } from "@ant-design/icons";
 
 
 export const ContactHero = () => {
