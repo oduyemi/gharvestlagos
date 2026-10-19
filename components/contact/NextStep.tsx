@@ -1,6 +1,5 @@
 
 "use client";
-
 import { motion, useReducedMotion } from "framer-motion";
 import {
   ArrowRightOutlined,
@@ -279,7 +278,6 @@ export const NextStep = () => {
           <div className="relative flex flex-col gap-7 p-6 sm:p-8 md:p-10 lg:flex-row lg:items-center lg:justify-between lg:gap-10 lg:px-12 lg:py-11">
             <div className="max-w-2xl">
               <div className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.18em] text-brand-gold sm:text-xs">
-                <HeartFilled />
                 We would love to hear from you
               </div>
 

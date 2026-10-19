@@ -9,7 +9,6 @@ import {
   CheckOutlined,
   CloseOutlined,
   HeartFilled,
-  HeartOutlined,
   LockOutlined,
   MessageOutlined,
   SafetyOutlined,
@@ -184,10 +183,6 @@ export const PrayerRequests = () => {
                 />
 
                 <div className="relative">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-brand-gold/25 bg-brand-gold/10 text-xl text-brand-gold">
-                    <HeartFilled />
-                  </div>
-
                   <p className="mt-8 text-[10px] font-bold uppercase tracking-[0.22em] text-brand-gold sm:text-xs">
                     You are not alone
                   </p>
@@ -445,7 +440,6 @@ export const PrayerRequests = () => {
                         }}
                         className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-slate-200 px-5 py-3 text-sm font-semibold text-brand-blue-dark transition hover:bg-slate-50"
                       >
-                        <HeartOutlined />
                         Share another request
                       </button>
                       <button
