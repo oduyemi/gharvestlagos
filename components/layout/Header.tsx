@@ -101,7 +101,7 @@ export const Header = () => {
           className="relative z-[70] shrink-0 pl-4"
         >
           <Image
-            src="/images/logo/logo.PNG"
+            src="/images/logo/logo.png"
             alt="Global Harvest Church"
             width={190}
             height={70}

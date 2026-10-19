@@ -82,7 +82,7 @@ useEffect(() => {
               className="inline-flex items-center rounded-lg transition-opacity hover:opacity-85"
             >
               <Image
-                src="/images/logo/logo.PNG"
+                src="/images/logo/logo.png"
                 alt="Global Harvest Church"
                 width={210}
                 height={78}
