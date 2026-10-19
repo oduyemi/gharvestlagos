@@ -29,17 +29,17 @@ const heroSlides = [
 const socialLinks = [
   {
     label: "Facebook",
-    href: "https://www.facebook.com/",
+    href: "https://www.facebook.com/gharvestchurch",
     icon: FacebookFilled,
   },
   {
     label: "YouTube",
-    href: "https://www.youtube.com/",
+    href: "https://www.youtube.com/@GlobalHarvestIntl",
     icon: YoutubeFilled,
   },
   {
     label: "Instagram",
-    href: "https://www.instagram.com/",
+    href: "https://www.instagram.com/gharvestchurch/",
     icon: InstagramFilled,
   },
 ];
