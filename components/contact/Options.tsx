@@ -135,13 +135,6 @@ export const ContactOptions = () => {
               out. Whether you have a question, need prayer, or are looking
               for community, we'd love to hear from you.
             </p>
-
-            <div className="mt-5 flex items-center gap-3">
-              <span className="h-px w-9 bg-brand-gold" />
-              <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-slate-400 sm:text-[11px]">
-                Love. Faith. Purpose.
-              </span>
-            </div>
           </div>
         </motion.div>
 

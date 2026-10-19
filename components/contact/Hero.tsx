@@ -51,13 +51,6 @@ export const ContactHero = () => {
             <ArrowDownOutlined className="transition-transform group-hover:translate-y-1" />
           </a>
         </motion.div>
-
-        <div className="mt-12 flex items-center gap-3 sm:mt-16">
-          <span className="h-px w-10 bg-brand-gold" />
-          <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-white/65 sm:text-xs">
-            Love. Faith. Purpose.
-          </p>
-        </div>
       </div>
     </section>
   );

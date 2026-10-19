@@ -313,15 +313,6 @@ export const NextStep = () => {
             </div>
           </div>
         </motion.div>
-
-        {/* Brand sign-off */}
-        <div className="mt-8 flex items-center justify-center gap-3 text-center sm:mt-9">
-          <span className="h-px w-8 bg-brand-gold/80 sm:w-12" />
-          <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-brand-blue-dark sm:text-xs">
-            Love. Faith. Purpose.
-          </p>
-          <span className="h-px w-8 bg-brand-gold/80 sm:w-12" />
-        </div>
       </div>
     </section>
   );
