@@ -27,11 +27,6 @@ export const ContactHero = () => {
           transition={{ duration: 0.65, ease: "easeOut" }}
           className="max-w-2xl"
         >
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.18em] text-white/90 backdrop-blur-sm sm:text-xs">
-            <HeartFilled className="text-brand-gold" />
-            We'd love to hear from you
-          </span>
-
           <h1 className="mt-6 text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             Let&apos;s start a
             <span className="block text-brand-gold">conversation.</span>
