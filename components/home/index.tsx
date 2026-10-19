@@ -189,7 +189,7 @@ export const Landing = () => {
             <motion.div variants={reveal} className="mb-6 sm:mb-8">
               <span className="flex items-center gap-3 text-[9px] font-bold uppercase tracking-[0.25em] text-white/90 sm:gap-4 sm:text-[10px] sm:tracking-[0.3em] md:text-xs">
                 <span className="h-px w-10 shrink-0 bg-brand-gold sm:w-14" />
-                Global Harvest Church
+                Global Harvest Church <br /> Maryland, Lagos
               </span>
             </motion.div>
 
