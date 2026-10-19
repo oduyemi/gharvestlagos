@@ -6,7 +6,6 @@ import Link from "next/link";import {
   FacebookFilled,
   InstagramFilled,
   YoutubeFilled,
-  HeartFilled,
   EnvironmentOutlined,
   MailOutlined,
   ArrowUpOutlined,
@@ -55,7 +54,6 @@ export const Footer = () => {
 
   return (
     <footer className="relative overflow-hidden bg-brand-blue-dark text-white">
-      {/* Subtle brand accents */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -right-32 -top-36 h-80 w-80 rounded-full border-[50px] border-brand-cyan/[0.07]"
@@ -66,9 +64,7 @@ export const Footer = () => {
       />
 
       <div className="gh-container relative mx-auto w-full px-5 sm:px-8 md:px-10 lg:px-12 xl:px-14">
-        {/* Main footer */}
         <div className="grid gap-10 py-12 sm:py-14 lg:grid-cols-[1.35fr_0.7fr_0.8fr_1fr] lg:gap-10 lg:py-16">
-          {/* Brand and introduction */}
           <div className="max-w-sm">
             <Link
               href="/"
@@ -107,7 +103,6 @@ export const Footer = () => {
             </div>
           </div>
 
-          {/* Quick navigation */}
           <div>
             <h2 className="text-xs font-bold uppercase tracking-[0.16em] text-brand-gold">
               Explore
@@ -128,7 +123,6 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Connect navigation */}
           <div>
             <h2 className="text-xs font-bold uppercase tracking-[0.16em] text-brand-gold">
               Get Connected
@@ -149,7 +143,6 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact and CTA */}
           <div>
             <h2 className="text-xs font-bold uppercase tracking-[0.16em] text-brand-gold">
               Stay in Touch
@@ -188,11 +181,9 @@ export const Footer = () => {
           </div>
         </div>
 
-        {/* Scripture-inspired brand message */}
         <div className="border-t border-white/10 py-5">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <p className="flex items-center gap-2 text-xs text-white/55 sm:text-sm">
-              <HeartFilled className="text-brand-gold" />
               A place to belong. A faith to grow. A purpose to live.
             </p>
 
