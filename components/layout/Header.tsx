@@ -95,7 +95,7 @@ export const Header = () => {
           className="relative z-[70] shrink-0 pl-4"
         >
           <Image
-            src="/images/logo/logo.png"
+            src="/images/logo/logo-white.png"
             alt="Global Harvest Church"
             width={190}
             height={70}
@@ -134,7 +134,7 @@ export const Header = () => {
                     className={`group relative inline-flex items-center gap-1.5 py-2 text-[13px] font-semibold tracking-wide transition-colors duration-200 ${
                       active
                         ? "text-brand-gold"
-                        : "text-gray-500 hover:text-brand-cyan"
+                        : "text-gray-200 hover:text-brand-cyan"
                     }`}
                   >
                     {item.label}
@@ -157,7 +157,7 @@ export const Header = () => {
                     className={`group relative inline-flex items-center py-2 text-[13px] font-semibold tracking-wide transition-colors duration-200 ${
                       active
                         ? "text-brand-gold"
-                        : "text-gray-500 hover:text-brand-cyan"
+                        : "text-gray-200 hover:text-brand-cyan"
                     }`}
                   >
                     {item.label}
