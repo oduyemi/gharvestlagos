@@ -37,8 +37,6 @@ const socialLinks = [
 export const Landing = () => {
   const shouldReduceMotion = useReducedMotion();
   const [activeSlide, setActiveSlide] = useState(0);
-
-  // Automatically advance through the hero images.
   useEffect(() => {
     const interval = window.setInterval(() => {
       setActiveSlide((current) => (current + 1) % heroSlides.length);
@@ -88,10 +86,6 @@ export const Landing = () => {
       aria-labelledby="hero-heading"
       className="relative isolate flex min-h-[760px] w-full overflow-hidden bg-[#15171b] text-white sm:pt-5 md:pt-14 max-md:min-h-[100svh] lg:h-[100svh] lg:min-h-[700px] lg:max-h-[1100px]"
     >
-      {/* ================================================== */}
-      {/* AUTOMATIC BACKGROUND IMAGE SLIDESHOW                */}
-      {/* ================================================== */}
-
       <div
         aria-hidden="true"
         className="absolute inset-0 -z-30 overflow-hidden"
@@ -134,37 +128,25 @@ export const Landing = () => {
         </AnimatePresence>
       </div>
 
-      {/* ================================================== */}
-      {/* IMAGE CONTRAST AND READABILITY                      */}
-      {/* ================================================== */}
-
-      {/* Neutral dark overlay — preserves natural photo colors */}
       <div
         aria-hidden="true"
         className="absolute inset-0 -z-20 bg-black/25"
       />
 
-      {/* Left-side contrast for the headline */}
       <div
         aria-hidden="true"
         className="absolute inset-0 -z-20 bg-[linear-gradient(90deg,rgba(12,15,20,0.78)_0%,rgba(12,15,20,0.62)_36%,rgba(12,15,20,0.22)_72%,rgba(12,15,20,0.35)_100%)]"
       />
 
-      {/* Bottom and top contrast */}
       <div
         aria-hidden="true"
         className="absolute inset-0 -z-20 bg-[linear-gradient(0deg,rgba(12,15,20,0.65)_0%,transparent_45%,rgba(12,15,20,0.18)_100%)]"
       />
 
-      {/* Restrained cyan atmospheric highlight */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -right-32 top-[18%] -z-10 h-80 w-80 rounded-full bg-brand-cyan/[0.07] blur-[110px] sm:h-[26rem] sm:w-[26rem]"
       />
-
-      {/* ================================================== */}
-      {/* DESKTOP LEFT RAIL                                   */}
-      {/* ================================================== */}
 
       <div
         aria-hidden="true"
@@ -173,13 +155,8 @@ export const Landing = () => {
         <div className="absolute left-1/2 top-28 h-12 w-px -translate-x-1/2 bg-gradient-to-b from-brand-gold/80 to-transparent" />
       </div>
 
-      {/* ================================================== */}
-      {/* HERO CONTENT                                        */}
-      {/* ================================================== */}
-
       <div className="gh-container relative z-10 flex w-full flex-1 items-center pb-28 pt-32 sm:pb-32 sm:pt-36 lg:pb-24 lg:pl-[calc(4.5rem+2rem)] lg:pr-8 lg:pt-24 xl:pl-[calc(5rem+3rem)] xl:pr-12">
         <div className="grid w-full min-w-0 items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(220px,290px)] lg:gap-10 xl:grid-cols-[minmax(0,1fr)_minmax(250px,320px)] xl:gap-16 2xl:gap-20">
-          {/* Main headline */}
           <motion.div
             initial="hidden"
             animate="visible"
@@ -207,7 +184,6 @@ export const Landing = () => {
               <span className="text-brand-gold">God.</span>
             </motion.h1>
 
-            {/* Brand accent */}
             <motion.div
               variants={reveal}
               className="mt-6 flex h-[3px] w-20 gap-2 sm:mt-7 sm:w-24"
@@ -225,7 +201,6 @@ export const Landing = () => {
               through life-transforming experiences with Christ.
             </motion.p>
 
-            {/* Mobile and tablet actions */}
             <motion.div
               variants={reveal}
               className="mt-7 flex max-w-md flex-col gap-3 sm:flex-row lg:hidden"
@@ -255,7 +230,6 @@ export const Landing = () => {
               </Link>
             </motion.div>
 
-            {/* Church values */}
             <motion.div
               variants={reveal}
               className="mt-7 flex items-center gap-3 border-t border-white/20 pt-5 sm:mt-9 sm:pt-6 lg:mt-8 xl:mt-10"
@@ -270,7 +244,6 @@ export const Landing = () => {
             </motion.div>
           </motion.div>
 
-          {/* Desktop calls to action */}
           <motion.aside
             initial="hidden"
             animate="visible"
@@ -330,10 +303,6 @@ export const Landing = () => {
         </div>
       </div>
 
-      {/* ================================================== */}
-      {/* DESKTOP SOCIAL RAIL                                 */}
-      {/* ================================================== */}
-
       <motion.aside
         initial="hidden"
         animate="visible"
@@ -361,7 +330,6 @@ export const Landing = () => {
         ))}
       </motion.aside>
 
-      {/* Mobile social links */}
       <div className="absolute bottom-5 right-4 z-10 flex items-center gap-2 sm:bottom-6 sm:right-6 lg:hidden">
         {socialLinks.map(({ label, href, icon: Icon }) => (
           <a
@@ -377,7 +345,6 @@ export const Landing = () => {
         ))}
       </div>
 
-      {/* Subtle brand finish */}
       <div
         aria-hidden="true"
         className="absolute inset-x-0 bottom-0 z-10 h-px bg-gradient-to-r from-transparent via-brand-gold/50 to-transparent"
