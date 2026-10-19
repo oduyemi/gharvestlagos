@@ -34,7 +34,7 @@ const socialLinks = [
   },
   {
     label: "YouTube",
-    href: "https://www.youtube.com/@GlobalHarvestIntl",
+    href: "https://www.youtube.com/@gharvestchurch",
     icon: YoutubeFilled,
   },
   {

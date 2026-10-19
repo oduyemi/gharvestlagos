@@ -1,16 +1,10 @@
 "use client";
-
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import {
-  CloseOutlined,
-  MenuOutlined,
-  ArrowRightOutlined,
-  DownOutlined,
-} from "@ant-design/icons";
+import { CloseOutlined, MenuOutlined, ArrowRightOutlined, DownOutlined } from "@ant-design/icons";
 
 const navLinks = [
   { label: "Worship Online", href: "/worship-online" },
@@ -222,7 +216,7 @@ export const Header = () => {
           aria-label={mobileOpen ? "Close navigation menu" : "Open navigation menu"}
           aria-expanded={mobileOpen}
           onClick={() => setMobileOpen((current) => !current)}
-          className="relative z-[80] flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white/[0.08] text-lg text-white transition-all duration-200 hover:bg-brand-gold hover:text-brand-blue-dark xl:hidden"
+          className="relative z-[80] mr-4 flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-black/[0.28] text-lg text-white transition-all duration-200 hover:bg-brand-gold hover:text-brand-blue-dark xl:hidden"
         >
           {mobileOpen ? <CloseOutlined /> : <MenuOutlined />}
         </button>
