@@ -86,7 +86,7 @@ export const LiveWorship = () => {
               <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-5 sm:p-7">
                 <div>
                   <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-gold sm:text-xs">
-                    Global Harvest Church
+                    Global Harvest Church, Maryland, Lagos
                   </p>
                   <h3 className="mt-2 text-xl font-bold text-white sm:text-2xl">
                     Let&apos;s worship together.

@@ -239,7 +239,7 @@ export const Landing = () => {
               </Link>
 
               <Link
-                href="/service-ministries"
+                href="/connect/#ministries"
                 className="group/action flex min-h-12 items-center justify-between gap-4 border border-white/40 bg-black/20 px-5 text-[10px] font-bold uppercase tracking-[0.15em] text-white backdrop-blur-sm transition-colors duration-300 hover:border-brand-cyan hover:bg-brand-cyan hover:text-[#071744]"
               >
                 Service Ministries
