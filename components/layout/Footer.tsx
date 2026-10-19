@@ -1,6 +1,5 @@
 
 "use client";
-
 import Link from "next/link";
 import {
   ArrowRightOutlined,
@@ -10,9 +9,9 @@ import {
   HeartFilled,
   EnvironmentOutlined,
   MailOutlined,
-  PhoneOutlined,
   ArrowUpOutlined,
 } from "@ant-design/icons";
+import Image from "next/image";
 
 const quickLinks = [
   { label: "Home", href: "/" },
@@ -72,18 +71,14 @@ export const Footer = () => {
               aria-label="Global Harvest Church home"
               className="inline-flex items-center gap-3"
             >
-              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-white text-brand-blue-dark">
-                <HeartFilled className="text-xl" />
-              </span>
-
-              <span className="leading-tight">
-                <span className="block text-base font-extrabold tracking-tight sm:text-lg">
-                  GLOBAL HARVEST
-                </span>
-                <span className="mt-0.5 block text-[10px] font-semibold uppercase tracking-[0.24em] text-brand-cyan">
-                  Church
-                </span>
-              </span>
+              <Image
+                src="/images/logo/logo-white.png"
+                alt="Global Harvest Church"
+                width={190}
+                height={70}
+                priority
+                className="h-10 w-auto object-contain sm:h-11 lg:h-12"
+              />
             </Link>
 
             <p className="mt-5 text-sm leading-7 text-white/65">
