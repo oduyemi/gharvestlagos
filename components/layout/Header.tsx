@@ -83,8 +83,10 @@ export const Header = () => {
   return (
     <header
       className={`${
-        isHome ? "absolute inset-x-0 top-0" : "relative"
-      } z-50 w-full bg-transparent`}
+        isHome
+          ? "absolute inset-x-0 top-0 bg-transparent"
+          : "relative bg-white"
+      } z-50 w-full`}
     >
       {/* Transparent main header */}
       <div className="gh-container flex items-center justify-between gap-5 py-4 lg:py-5">
@@ -95,10 +97,14 @@ export const Header = () => {
           className="relative z-[70] shrink-0 pl-4"
         >
           <Image
-            src="/images/logo/logo-white.png"
+            src={
+              isHome
+                ? "/images/logo/logo-white.png"
+                : "/images/logo/logo.png"
+            }
             alt="Global Harvest Church"
-            width={190}
-            height={70}
+            width={180}
+            height={60}
             priority
             className="h-10 w-auto object-contain sm:h-11 lg:h-12"
           />
@@ -134,7 +140,7 @@ export const Header = () => {
                     className={`group relative inline-flex items-center gap-1.5 py-2 text-[13px] font-semibold tracking-wide transition-colors duration-200 ${
                       active
                         ? "text-brand-gold"
-                        : "text-gray-200 hover:text-brand-cyan"
+                        : "text-gray-400 hover:text-brand-cyan"
                     }`}
                   >
                     {item.label}
@@ -157,7 +163,7 @@ export const Header = () => {
                     className={`group relative inline-flex items-center py-2 text-[13px] font-semibold tracking-wide transition-colors duration-200 ${
                       active
                         ? "text-brand-gold"
-                        : "text-gray-200 hover:text-brand-cyan"
+                        : "text-gray-400 hover:text-brand-cyan"
                     }`}
                   >
                     {item.label}
