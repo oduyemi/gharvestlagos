@@ -139,8 +139,8 @@ export const Header = () => {
                     }
                     className={`group relative inline-flex items-center gap-1.5 py-2 text-[13px] font-semibold tracking-wide transition-colors duration-200 ${
                       active
-                        ? "text-yellow-700"
-                        : "text-gray-400 hover:text-brand-cyan"
+                        ? "text-brand-gold"
+                        : "text-gray-500 hover:text-brand-cyan"
                     }`}
                   >
                     {item.label}
@@ -150,7 +150,7 @@ export const Header = () => {
                       }`}
                     />
                     <span
-                      className={`absolute inset-x-0 -bottom-0.5 h-[2px] origin-left bg-yellow-700 transition-transform duration-300 ${
+                      className={`absolute inset-x-0 -bottom-0.5 h-[2px] origin-left bg-brand-gold transition-transform duration-300 ${
                         active
                           ? "scale-x-100"
                           : "scale-x-0 group-hover:scale-x-100"
@@ -162,13 +162,13 @@ export const Header = () => {
                     href={item.href}
                     className={`group relative inline-flex items-center py-2 text-[13px] font-semibold tracking-wide transition-colors duration-200 ${
                       active
-                        ? "text-yellow-700"
-                        : "text-gray-400 hover:text-brand-cyan"
+                        ? "text-brand-gold"
+                        : "text-gray-500 hover:text-brand-cyan"
                     }`}
                   >
                     {item.label}
                     <span
-                      className={`absolute inset-x-0 -bottom-0.5 h-[2px] origin-left bg-yellow-700 transition-transform duration-300 ${
+                      className={`absolute inset-x-0 -bottom-0.5 h-[2px] origin-left bg-brand-gold transition-transform duration-300 ${
                         active
                           ? "scale-x-100"
                           : "scale-x-0 group-hover:scale-x-100"
@@ -191,7 +191,7 @@ export const Header = () => {
                           onClick={() => setOpenDropdown(null)}
                           className={`flex items-center justify-between gap-4 rounded-lg px-4 py-3 text-sm transition-colors ${
                             isItemActive(child.href)
-                              ? "bg-white/[0.06] text-yellow-700"
+                              ? "bg-white/[0.06] text-brand-gold"
                               : "text-white hover:bg-white/[0.08] hover:text-brand-cyan"
                           }`}
                         >
@@ -210,7 +210,7 @@ export const Header = () => {
         {/* Desktop CTA */}
         <Link
           href={joinLink.href}
-          className="hidden shrink-0 items-center gap-2 text-white bg-yellow-700 px-5 py-3 text-[11px] font-extrabold tracking-[0.12em] text-brand-blue-dark transition-all duration-200 hover:-translate-y-0.5 hover:bg-yellow-800 xl:inline-flex"
+          className="hidden shrink-0 items-center gap-2 text-white bg-brand-gold px-5 py-3 text-[11px] font-extrabold tracking-[0.12em] text-brand-blue-dark transition-all duration-200 hover:-translate-y-0.5 hover:bg-yellow-800 xl:inline-flex"
         >
           {joinLink.label}
           <ArrowRightOutlined className="text-xs" />
@@ -222,7 +222,7 @@ export const Header = () => {
           aria-label={mobileOpen ? "Close navigation menu" : "Open navigation menu"}
           aria-expanded={mobileOpen}
           onClick={() => setMobileOpen((current) => !current)}
-          className="relative z-[80] flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white/[0.08] text-lg text-white transition-all duration-200 hover:bg-yellow-700 hover:text-brand-blue-dark xl:hidden"
+          className="relative z-[80] flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white/[0.08] text-lg text-white transition-all duration-200 hover:bg-brand-gold hover:text-brand-blue-dark xl:hidden"
         >
           {mobileOpen ? <CloseOutlined /> : <MenuOutlined />}
         </button>
@@ -270,13 +270,13 @@ export const Header = () => {
                   type="button"
                   aria-label="Close navigation menu"
                   onClick={closeMenu}
-                  className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-yellow-700 hover:text-brand-blue-dark"
+                  className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-brand-gold hover:text-brand-blue-dark"
                 >
                   <CloseOutlined />
                 </button>
               </div>
 
-              <div className="mb-5 h-px bg-gradient-to-r from-yellow-700/70 via-white/15 to-transparent" />
+              <div className="mb-5 h-px bg-gradient-to-r from-brand-gold/70 via-white/15 to-transparent" />
 
               <nav aria-label="Mobile navigation" className="space-y-1">
                 {navLinks.map((item, index) => {
@@ -308,7 +308,7 @@ export const Header = () => {
                           }
                           className={`flex min-h-12 w-full items-center justify-between gap-4 rounded-xl px-3 py-3.5 text-left text-[15px] font-semibold transition-colors ${
                             expanded || active
-                              ? "bg-white/[0.07] text-yellow-700"
+                              ? "bg-white/[0.07] text-brand-gold"
                               : "text-white hover:bg-white/[0.05] hover:text-brand-cyan"
                           }`}
                         >
@@ -325,7 +325,7 @@ export const Header = () => {
                           onClick={closeMenu}
                           className={`flex min-h-12 items-center justify-between gap-4 rounded-xl px-3 py-3.5 text-[15px] font-semibold transition-colors ${
                             active
-                              ? "bg-white/[0.07] text-yellow-700"
+                              ? "bg-white/[0.07] text-brand-gold"
                               : "text-white hover:bg-white/[0.05] hover:text-brand-cyan"
                           }`}
                         >
@@ -357,7 +357,7 @@ export const Header = () => {
                                   onClick={closeMenu}
                                   className={`flex items-center justify-between gap-3 rounded-lg px-3 py-3 text-sm transition-colors ${
                                     isItemActive(child.href)
-                                      ? "text-yellow-700"
+                                      ? "text-brand-gold"
                                       : "text-white/75 hover:bg-white/[0.05] hover:text-brand-cyan"
                                   }`}
                                 >
@@ -378,7 +378,7 @@ export const Header = () => {
               <Link
                 href={joinLink.href}
                 onClick={closeMenu}
-                className="group mt-6 flex min-h-[58px] w-full items-center justify-between gap-4 rounded-xl bg-yellow-700 px-5 py-4 text-sm font-extrabold tracking-[0.1em] text-brand-blue-dark transition-all duration-200 hover:bg-white active:scale-[0.99]"
+                className="group mt-6 flex min-h-[58px] w-full items-center justify-between gap-4 rounded-xl bg-brand-gold px-5 py-4 text-sm font-extrabold tracking-[0.1em] text-brand-blue-dark transition-all duration-200 hover:bg-white active:scale-[0.99]"
               >
                 <span>{joinLink.label}</span>
                 <span className="flex h-9 w-9 items-center justify-center rounded-full bg-brand-blue-dark/10 transition-transform duration-200 group-hover:translate-x-1">
