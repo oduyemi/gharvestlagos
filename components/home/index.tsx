@@ -1,20 +1,10 @@
 
 "use client";
-
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  AnimatePresence,
-  motion,
-  useReducedMotion,
-} from "framer-motion";
-import {
-  ArrowRightOutlined,
-  FacebookFilled,
-  InstagramFilled,
-  YoutubeFilled,
-} from "@ant-design/icons";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { ArrowRightOutlined, FacebookFilled, InstagramFilled, YoutubeFilled } from "@ant-design/icons";
 
 const heroSlides = [
   "/images/hero/homehero1.jpg",
