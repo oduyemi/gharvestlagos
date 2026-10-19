@@ -1,7 +1,7 @@
 
 "use client";
-import Link from "next/link";
-import {
+import { useEffect, useState } from "react";
+import Link from "next/link";import {
   ArrowRightOutlined,
   FacebookFilled,
   InstagramFilled,
@@ -47,7 +47,11 @@ const socialLinks = [
 ];
 
 export const Footer = () => {
-  const currentYear = new Date().getFullYear();
+  const [currentYear, setCurrentYear] = useState<number | null>(null);
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
 
   return (
     <footer className="relative overflow-hidden bg-brand-blue-dark text-white">
@@ -206,7 +210,7 @@ export const Footer = () => {
         <div className="border-t border-white/10 py-5">
           <div className="flex flex-col gap-3 text-xs text-white/45 sm:flex-row sm:items-center sm:justify-between">
             <p>
-              © {currentYear} Global Harvest Church. All rights reserved.
+              © {currentYear ?? "2026"} Global Harvest Church. All rights reserved.
             </p>
 
             <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
