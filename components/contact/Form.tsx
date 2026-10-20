@@ -13,13 +13,12 @@ import {
   SafetyCertificateOutlined,
 } from "@ant-design/icons";
 
+
 type FormStatus = "idle" | "loading" | "success" | "error";
 
-const inputClass =
-  "mt-2.5 min-h-12 w-full rounded-xl border border-slate-200 bg-[#fbfcfe] px-4 py-3 text-sm text-brand-blue-dark outline-none transition duration-200 placeholder:text-slate-400 hover:border-slate-300 focus:border-brand-cyan focus:bg-white focus:ring-4 focus:ring-brand-cyan/10 disabled:cursor-not-allowed disabled:opacity-60";
+const inputClass = "mt-2.5 min-h-12 w-full rounded-xl border border-slate-200 bg-[#fbfcfe] px-4 py-3 text-sm text-brand-blue-dark outline-none transition duration-200 placeholder:text-slate-400 hover:border-slate-300 focus:border-brand-cyan focus:bg-white focus:ring-4 focus:ring-brand-cyan/10 disabled:cursor-not-allowed disabled:opacity-60";
+const labelClass = "block text-xs font-bold tracking-wide text-brand-blue-dark sm:text-sm";
 
-const labelClass =
-  "block text-xs font-bold tracking-wide text-brand-blue-dark sm:text-sm";
 
 export const ContactForm = () => {
   const reduceMotion = useReducedMotion();
@@ -98,7 +97,6 @@ export const ContactForm = () => {
 
       <div className="gh-container mx-auto w-full px-5 sm:px-8 md:px-10 lg:px-12 xl:px-14">
         <div className="grid items-start gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:gap-14 xl:gap-20">
-          {/* Introduction */}
           <motion.div
             variants={reveal}
             initial={reduceMotion ? false : "hidden"}
@@ -122,7 +120,6 @@ export const ContactForm = () => {
               from you.
             </p>
 
-            {/* Contact reassurance */}
             <div className="mt-8 rounded-2xl border border-slate-200/80 bg-white p-5 shadow-[0_12px_35px_-30px_rgba(11,34,101,0.25)] sm:p-6">
               <div className="flex items-start gap-4">
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-gold/20 text-lg text-brand-blue-dark">
@@ -176,7 +173,6 @@ export const ContactForm = () => {
             </div>
           </motion.div>
 
-          {/* Form panel */}
           <motion.div
             variants={reveal}
             initial={reduceMotion ? false : "hidden"}
@@ -275,7 +271,6 @@ export const ContactForm = () => {
                 onSubmit={handleSubmit}
                 className="mt-7 space-y-5"
               >
-                {/* Honeypot field for server-side spam checks */}
                 <div
                   aria-hidden="true"
                   className="absolute -left-[10000px] top-auto h-px w-px overflow-hidden"

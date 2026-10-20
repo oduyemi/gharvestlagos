@@ -6,7 +6,6 @@ import { Footer } from "@/components/layout/Footer";
 
 export function ConditionalFooter() {
   const pathname = usePathname();
-
   if (pathname === "/") {
     return null;
   }

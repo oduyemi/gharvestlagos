@@ -1,14 +1,7 @@
 
 "use client";
 import { motion, useReducedMotion } from "framer-motion";
-import {
-  ArrowDownOutlined,
-  ArrowRightOutlined,
-  HeartFilled,
-  HeartOutlined,
-  MessageOutlined,
-  TeamOutlined,
-} from "@ant-design/icons";
+import { ArrowDownOutlined, ArrowRightOutlined, HeartFilled, MessageOutlined, TeamOutlined } from "@ant-design/icons";
 
 
 const options = [
@@ -83,7 +76,6 @@ export const ContactOptions = () => {
       aria-labelledby="contact-options-heading"
       className="relative isolate overflow-hidden bg-[#f8fafc] py-16 sm:py-20 lg:py-28"
     >
-      {/* Subtle background details */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -right-32 -top-36 -z-10 h-[28rem] w-[28rem] rounded-full bg-brand-cyan/[0.055] blur-3xl"
@@ -103,7 +95,6 @@ export const ContactOptions = () => {
       />
 
       <div className="gh-container mx-auto w-full px-5 sm:px-8 md:px-10 lg:px-12 xl:px-14">
-        {/* Section introduction */}
         <motion.div
           {...revealOptions}
           transition={{ duration: 0.65, ease: "easeOut" }}
@@ -136,123 +127,117 @@ export const ContactOptions = () => {
             </p>
           </div>
         </motion.div>
-
-        {/* Contact pathways */}
         
-<div className="mt-10 grid items-stretch gap-5 sm:mt-14 md:grid-cols-3 md:gap-5 lg:gap-6">
-  {options.map((option, index) => {
-    const Icon = option.icon;
+        <div className="mt-10 grid items-stretch gap-5 sm:mt-14 md:grid-cols-3 md:gap-5 lg:gap-6">
+          {options.map((option, index) => {
+            const Icon = option.icon;
 
-    return (
-        <motion.a
-        key={option.number}
-        href={option.href}
-        onClick={() => {
-          if (option.topic === "General enquiry") {
-            selectTopic(option.topic);
-          }
-        }}
-        className={`group relative flex min-h-[320px] flex-col overflow-hidden rounded-2xl border p-6 outline-none transition-[transform,border-color,box-shadow,background-color] duration-300 hover:-translate-y-1.5 focus-visible:ring-2 focus-visible:ring-brand-cyan focus-visible:ring-offset-4 sm:p-7 lg:min-h-[350px] lg:p-8 ${
-          option.featured
-            ? "border-brand-blue-dark bg-brand-blue-dark text-white shadow-[0_20px_50px_-28px_rgba(7,23,68,0.65)] hover:shadow-[0_28px_60px_-28px_rgba(7,23,68,0.75)]"
-            : "border-slate-200/80 bg-white text-brand-blue-dark shadow-[0_8px_30px_-24px_rgba(11,34,101,0.2)] hover:border-slate-300 hover:shadow-[0_24px_50px_-30px_rgba(11,34,101,0.25)]"
-        }`}
-      >
-        {/* Accent strip */}
-        <span
-          aria-hidden="true"
-          className={`absolute inset-x-0 top-0 h-1 ${option.accent} origin-left transition-transform duration-500 group-hover:scale-x-100 ${
-            option.featured ? "scale-x-100" : "scale-x-0"
-          }`}
-        />
+            return (
+                <motion.a
+                key={option.number}
+                href={option.href}
+                onClick={() => {
+                  if (option.topic === "General enquiry") {
+                    selectTopic(option.topic);
+                  }
+                }}
+                className={`group relative flex min-h-[320px] flex-col overflow-hidden rounded-2xl border p-6 outline-none transition-[transform,border-color,box-shadow,background-color] duration-300 hover:-translate-y-1.5 focus-visible:ring-2 focus-visible:ring-brand-cyan focus-visible:ring-offset-4 sm:p-7 lg:min-h-[350px] lg:p-8 ${
+                  option.featured
+                    ? "border-brand-blue-dark bg-brand-blue-dark text-white shadow-[0_20px_50px_-28px_rgba(7,23,68,0.65)] hover:shadow-[0_28px_60px_-28px_rgba(7,23,68,0.75)]"
+                    : "border-slate-200/80 bg-white text-brand-blue-dark shadow-[0_8px_30px_-24px_rgba(11,34,101,0.2)] hover:border-slate-300 hover:shadow-[0_24px_50px_-30px_rgba(11,34,101,0.25)]"
+                }`}
+              >
+                <span
+                  aria-hidden="true"
+                  className={`absolute inset-x-0 top-0 h-1 ${option.accent} origin-left transition-transform duration-500 group-hover:scale-x-100 ${
+                    option.featured ? "scale-x-100" : "scale-x-0"
+                  }`}
+                />
 
-        {/* Decorative background glow */}
-        <span
-          aria-hidden="true"
-          className={`pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full blur-3xl transition-opacity duration-500 ${
-            option.featured
-              ? "bg-brand-cyan/20 opacity-70 group-hover:opacity-100"
-              : "bg-brand-cyan/10 opacity-0 group-hover:opacity-100"
-          }`}
-        />
+                <span
+                  aria-hidden="true"
+                  className={`pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full blur-3xl transition-opacity duration-500 ${
+                    option.featured
+                      ? "bg-brand-cyan/20 opacity-70 group-hover:opacity-100"
+                      : "bg-brand-cyan/10 opacity-0 group-hover:opacity-100"
+                  }`}
+                />
 
-        <div className="relative flex items-start justify-between gap-4">
-          <div
-            className={`flex h-12 w-12 items-center justify-center rounded-xl transition-transform duration-300 group-hover:scale-105 ${
-              option.featured
-                ? "bg-white/10 text-brand-gold ring-1 ring-white/10"
-                : "bg-brand-cyan/10 text-brand-cyan"
-            }`}
-          >
-            <Icon className="text-xl" />
+                <div className="relative flex items-start justify-between gap-4">
+                  <div
+                    className={`flex h-12 w-12 items-center justify-center rounded-xl transition-transform duration-300 group-hover:scale-105 ${
+                      option.featured
+                        ? "bg-white/10 text-brand-gold ring-1 ring-white/10"
+                        : "bg-brand-cyan/10 text-brand-cyan"
+                    }`}
+                  >
+                    <Icon className="text-xl" />
+                  </div>
+
+                  <span
+                    className={`pt-1 text-xs font-bold tracking-[0.16em] ${
+                      option.featured ? "text-white/35" : "text-slate-300"
+                    }`}
+                  >
+                    {option.number}
+                  </span>
+                </div>
+
+                <div className="relative mt-8">
+                  <p
+                    className={`text-[9px] font-bold uppercase leading-5 tracking-[0.16em] sm:text-[10px] ${
+                      option.featured ? "text-brand-gold" : "text-slate-400"
+                    }`}
+                  >
+                    {option.eyebrow}
+                  </p>
+
+                  <h3
+                    className={`mt-2 text-2xl font-bold tracking-tight ${
+                      option.featured ? "text-white" : "text-brand-blue-dark"
+                    }`}
+                  >
+                    {option.title}
+                  </h3>
+
+                  <p
+                    className={`mt-3 text-sm leading-7 ${
+                      option.featured ? "text-white/70" : "text-slate-600"
+                    }`}
+                  >
+                    {option.description}
+                  </p>
+                </div>
+
+                  <div
+                    className={`relative mt-auto flex items-center justify-between gap-3 border-t pt-5 ${
+                      option.featured ? "border-white/15" : "border-slate-100"
+                    }`}
+                  >
+                    <span
+                      className={`text-xs font-bold sm:text-sm ${
+                        option.featured
+                          ? "text-white transition-colors group-hover:text-brand-gold"
+                          : "text-brand-blue-dark transition-colors group-hover:text-brand-cyan"
+                      }`}
+                    >
+                      {option.action}
+                    </span>
+
+                    <span
+                      className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full transition-all duration-300 ${
+                        option.featured
+                          ? "bg-brand-gold text-brand-blue-dark group-hover:bg-white"
+                          : "border border-slate-200 bg-white text-brand-blue-dark group-hover:border-brand-blue-dark group-hover:bg-brand-blue-dark group-hover:text-white"
+                      }`}
+                    >
+                      <ArrowRightOutlined className="text-xs transition-transform duration-300 group-hover:translate-x-0.5" />
+                    </span>
+                  </div>
+                </motion.a>
+              );
+            })}
           </div>
-
-          <span
-            className={`pt-1 text-xs font-bold tracking-[0.16em] ${
-              option.featured ? "text-white/35" : "text-slate-300"
-            }`}
-          >
-            {option.number}
-          </span>
-        </div>
-
-        <div className="relative mt-8">
-          <p
-            className={`text-[9px] font-bold uppercase leading-5 tracking-[0.16em] sm:text-[10px] ${
-              option.featured ? "text-brand-gold" : "text-slate-400"
-            }`}
-          >
-            {option.eyebrow}
-          </p>
-
-          <h3
-            className={`mt-2 text-2xl font-bold tracking-tight ${
-              option.featured ? "text-white" : "text-brand-blue-dark"
-            }`}
-          >
-            {option.title}
-          </h3>
-
-          <p
-            className={`mt-3 text-sm leading-7 ${
-              option.featured ? "text-white/70" : "text-slate-600"
-            }`}
-          >
-            {option.description}
-          </p>
-        </div>
-
-        <div
-          className={`relative mt-auto flex items-center justify-between gap-3 border-t pt-5 ${
-            option.featured ? "border-white/15" : "border-slate-100"
-          }`}
-        >
-          <span
-            className={`text-xs font-bold sm:text-sm ${
-              option.featured
-                ? "text-white transition-colors group-hover:text-brand-gold"
-                : "text-brand-blue-dark transition-colors group-hover:text-brand-cyan"
-            }`}
-          >
-            {option.action}
-          </span>
-
-          <span
-            className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full transition-all duration-300 ${
-              option.featured
-                ? "bg-brand-gold text-brand-blue-dark group-hover:bg-white"
-                : "border border-slate-200 bg-white text-brand-blue-dark group-hover:border-brand-blue-dark group-hover:bg-brand-blue-dark group-hover:text-white"
-            }`}
-          >
-            <ArrowRightOutlined className="text-xs transition-transform duration-300 group-hover:translate-x-0.5" />
-          </span>
-        </div>
-      </motion.a>
-    );
-  })}
-</div>
-
-        {/* Reassurance banner */}
         <motion.div
           {...revealOptions}
           transition={{ duration: 0.55, delay: 0.15 }}
@@ -265,10 +250,6 @@ export const ContactOptions = () => {
 
           <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between sm:gap-8">
             <div className="flex items-start gap-3.5 sm:items-center">
-              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand-gold/15 text-brand-blue-dark">
-                <HeartOutlined className="text-lg" />
-              </div>
-
               <div>
                 <h3 className="text-sm font-bold text-brand-blue-dark sm:text-base">
                   Come as you are. You're welcome here.

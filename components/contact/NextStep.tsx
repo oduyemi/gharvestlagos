@@ -11,6 +11,7 @@ import {
   MessageOutlined,
 } from "@ant-design/icons";
 
+
 const nextSteps = [
   {
     number: "01",
@@ -74,7 +75,6 @@ export const NextStep = () => {
       />
 
       <div className="gh-container mx-auto w-full px-5 sm:px-8 md:px-10 lg:px-12 xl:px-14">
-        {/* Image-led introduction */}
         <motion.div
           variants={reveal}
           initial={reduceMotion ? false : "hidden"}
@@ -162,7 +162,6 @@ export const NextStep = () => {
           </div>
         </motion.div>
 
-        {/* Introduction to the options */}
         <motion.div
           variants={reveal}
           initial={reduceMotion ? false : "hidden"}
@@ -186,7 +185,6 @@ export const NextStep = () => {
           </p>
         </motion.div>
 
-        {/* Next-step cards */}
         <div
           id="next-step-options"
           className="mt-7 grid scroll-mt-28 gap-5 md:grid-cols-3 lg:gap-6"
@@ -252,7 +250,6 @@ export const NextStep = () => {
           })}
         </div>
 
-        {/* Closing invitation with the same photography */}
         <motion.div
           initial={reduceMotion ? false : { opacity: 0, y: 18 }}
           whileInView={reduceMotion ? undefined : { opacity: 1, y: 0 }}

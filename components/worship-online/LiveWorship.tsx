@@ -20,8 +20,7 @@ export const LiveWorship = () => {
         >
           {/* Concise introduction */}
           <div className="max-w-xl">
-            <p className="mb-4 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-brand-cyan">
-              <span className="h-px w-8 bg-brand-gold" />
+            <p className="mb-4 pl-2 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-brand-cyan">
               Worship with us
             </p>
 

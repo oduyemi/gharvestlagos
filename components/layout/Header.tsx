@@ -45,9 +45,7 @@ const joinLink = { label: "JOIN MC LIVE", href: "/mc-live" };
 export const Header = () => {
   const pathname = usePathname();
   const shouldReduceMotion = useReducedMotion();
-
   const isHome = pathname === "/";
-
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [mobileDropdown, setMobileDropdown] = useState<string | null>(null);
@@ -88,7 +86,6 @@ export const Header = () => {
           : "relative bg-white"
       } z-50 w-full`}
     >
-      {/* Transparent main header */}
       <div className="gh-container flex items-center justify-between gap-5 py-4 lg:py-5">
         <Link
           href="/"
@@ -110,7 +107,6 @@ export const Header = () => {
           />
         </Link>
 
-        {/* Desktop navigation */}
         <nav
           aria-label="Main navigation"
           className="hidden items-center gap-5 xl:flex 2xl:gap-7"
@@ -216,7 +212,6 @@ export const Header = () => {
           <ArrowRightOutlined className="text-xs" />
         </Link>
 
-        {/* Mobile menu toggle */}
         <button
           type="button"
           aria-label={mobileOpen ? "Close navigation menu" : "Open navigation menu"}
@@ -232,7 +227,6 @@ export const Header = () => {
       <AnimatePresence>
         {mobileOpen && (
           <>
-            {/* Blurred page backdrop */}
             <motion.button
               type="button"
               aria-label="Close navigation menu"
@@ -243,7 +237,6 @@ export const Header = () => {
               className="fixed inset-0 z-[55] h-dvh w-full bg-[#071744]/55 backdrop-blur-md xl:hidden"
             />
 
-            {/* Frosted-glass mobile panel */}
             <motion.div
               initial={
                 shouldReduceMotion
@@ -255,7 +248,6 @@ export const Header = () => {
               transition={{ duration: shouldReduceMotion ? 0 : 0.24 }}
               className="fixed inset-x-3 top-3 z-[60] max-h-[calc(100dvh-24px)] overflow-y-auto rounded-3xl bg-[#071744]/85 px-5 pb-6 pt-5 backdrop-blur-2xl sm:inset-x-5 sm:px-7 xl:hidden"
             >
-              {/* Mobile panel heading */}
               <div className="mb-5 flex items-center justify-between gap-4">
                 <div>
                   <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-brand-cyan">
@@ -374,7 +366,6 @@ export const Header = () => {
                 })}
               </nav>
 
-              {/* Full-width primary CTA */}
               <Link
                 href={joinLink.href}
                 onClick={closeMenu}

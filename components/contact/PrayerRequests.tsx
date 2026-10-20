@@ -132,7 +132,6 @@ export const PrayerRequests = () => {
       return;
     }
 
-    // Frontend demonstration only — connect your API when ready.
     setSubmitted(true);
   };
 
@@ -314,7 +313,6 @@ export const PrayerRequests = () => {
         </div>
       </section>
 
-      {/* Dedicated prayer request modal */}
       <AnimatePresence>
         {isOpen && (
           <motion.div

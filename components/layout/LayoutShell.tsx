@@ -10,15 +10,11 @@ export function LayoutShell({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
-
   const isNotFoundPage = pathname === "/not-found";
-
   return (
     <>
       {!isNotFoundPage && <Header />}
-
       {children}
-
       {!isNotFoundPage && <ConditionalFooter />}
     </>
   );
