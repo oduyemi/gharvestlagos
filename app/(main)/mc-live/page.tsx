@@ -10,17 +10,17 @@ export const metadata: Metadata = {
   description:
     "Discover Global Harvest Church, Maryland, Lagos — a Christian community committed to helping people discover their God-given purpose through life-transforming experiences with Christ.",
   alternates: {
-    canonical: "/about",
+    canonical: "/mc-live",
   },
   openGraph: {
-    title: "About Us | Global Harvest Church Maryland, Lagos",
+    title: "JOIN MC LIVE | Global Harvest Church Maryland, Lagos",
     description:
-      "Discover our mission, vision, FLoAT values and the story of the wider Global Harvest Church ministry.",
-    url: "/about",
+      " Midweek teachings, prayers, and interactive community engagement centered on the church's vision of helping people discover their purpose in Christ.",
+    url: "/mc-live",
     type: "website",
     images: [
       {
-        url: "/images/about/about-hero.jpg",
+        url: "/images/hero/mclive.jpeg",
         width: 1200,
         height: 630,
         alt: "Global Harvest Church, Maryland, Lagos",

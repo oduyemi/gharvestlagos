@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/about/about-hero.jpg",
+        url: "/images/hero/about.jpg",
         width: 1200,
         height: 630,
         alt: "Global Harvest Church, Maryland, Lagos",
