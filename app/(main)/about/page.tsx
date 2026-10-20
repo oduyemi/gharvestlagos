@@ -1,6 +1,5 @@
 
 import type { Metadata } from "next";
-
 import {AboutHero} from "@/components/about/Hero";
 import {AboutIntro} from "@/components/about/Intro";
 import {AboutMissionVision} from "@/components/about/MissionVision";
