@@ -1,6 +1,6 @@
 "use client";
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowRightOutlined, GiftOutlined, ShopOutlined, HeartOutlined, TeamOutlined } from "@ant-design/icons";
+import { ArrowRightOutlined, GiftOutlined, ShopOutlined, HeartOutlined, TeamOutlined, CheckOutlined } from "@ant-design/icons";
 
 
 const steps = [
@@ -9,33 +9,36 @@ const steps = [
     label: "THE GIVING",
     title: "A community that gives.",
     description:
-      "Church members, partners, and sponsors help provide everyday essentials for households that need support.",
+      "Church members, partners, and sponsors come together to provide everyday essentials for households that need support.",
     icon: GiftOutlined,
     accent: "#FFC72C",
-    bg: "bg-[#fff7dc]",
-    detail: "DONATIONS + PARTNERSHIPS",
+    wash: "#FFF7DF",
+    detail: "DONATIONS & PARTNERSHIPS",
+    note: "It starts with generosity.",
   },
   {
     number: "02",
     label: "THE EXPERIENCE",
-    title: "A choice that matters.",
+    title: "The freedom to choose.",
     description:
-      "With a voucher, families choose the essentials that make the most difference in their own homes.",
+      "Using a voucher, families select the essentials that matter most to their own households, with dignity and choice at the centre.",
     icon: ShopOutlined,
     accent: "#00A3E0",
-    bg: "bg-[#e7f7fd]",
-    detail: "FREEDOM + DIGNITY",
+    wash: "#E7F7FD",
+    detail: "CHOICE & DIGNITY",
+    note: "Support, on their terms.",
   },
   {
     number: "03",
     label: "THE CONNECTION",
-    title: "Care that stays with you.",
+    title: "Care beyond the essentials.",
     description:
-      "Every visit is an opportunity for encouragement, prayer, and meaningful human connection.",
+      "Each visit can also create space for encouragement, prayer, and meaningful human connection.",
     icon: HeartOutlined,
     accent: "#00A859",
-    bg: "bg-[#e6f7ee]",
-    detail: "KINDNESS + COMMUNITY",
+    wash: "#E7F7EE",
+    detail: "CARE & COMMUNITY",
+    note: "Every person matters.",
   },
 ];
 
@@ -47,131 +50,169 @@ export const Shop4FreeHowItWorks = () => {
   return (
     <section
       id="shop4free-how-it-works"
-      className="relative scroll-mt-24 overflow-hidden bg-white py-20 sm:py-24 lg:py-32"
+      aria-labelledby="shop4free-how-title"
+      className="relative isolate scroll-mt-24 overflow-hidden bg-[#F7F9FC] py-20 sm:py-24 lg:py-32"
     >
+      {/* Restrained brand atmosphere */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -right-40 top-0 -z-10 h-[420px] w-[420px] rounded-full bg-[#41B6E6]/10 blur-[100px]"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -bottom-32 -left-40 -z-10 h-[360px] w-[360px] rounded-full bg-[#FFC72C]/10 blur-[90px]"
+      />
+
       <div className="gh-container relative mx-auto px-5 sm:px-8 md:px-10 lg:px-12 xl:px-14">
-        <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+        {/* Section introduction */}
+        <div className="grid gap-8 lg:grid-cols-[1fr_0.72fr] lg:items-end lg:gap-16">
           <motion.div
             initial={reduceMotion ? false : { opacity: 0, y: 20 }}
             whileInView={reduceMotion ? undefined : { opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.25 }}
-            transition={{ duration: 0.65, ease }}
+            transition={{ duration: 0.7, ease }}
           >
-            <div className="mb-5 flex items-center gap-3">
-              <span className="h-1 w-10 rounded-full bg-[#E87722]" />
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#0B2265]">
-                How it works
-              </p>
+            <div className="mb-6 flex items-center gap-3">
+              <span className="h-[3px] w-9 rounded-full bg-[#E87722]" />
+              <span className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#0B2265] sm:text-xs">
+                How Shop4Free works
+              </span>
             </div>
 
-            <h2 className="max-w-xl text-4xl font-extrabold leading-[1.08] tracking-tight text-[#0B2265] sm:text-5xl lg:text-6xl">
-              Simple steps.
+            <h2
+              id="shop4free-how-title"
+              className="max-w-2xl text-[2.8rem] font-semibold leading-[0.98] tracking-[-0.065em] text-[#0B2265] sm:text-5xl lg:text-[4.5rem]"
+            >
+              Practical help.
               <br />
-              <span className="text-[#00A3E0]">Real impact.</span>
+              <span className="font-serif font-normal italic text-[#00A3E0]">
+                Personal dignity.
+              </span>
             </h2>
           </motion.div>
 
           <motion.div
-            initial={reduceMotion ? false : { opacity: 0, x: 18 }}
+            initial={reduceMotion ? false : { opacity: 0, x: 20 }}
             whileInView={reduceMotion ? undefined : { opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.25 }}
-            transition={{ duration: 0.65, delay: 0.1, ease }}
-            className="flex flex-col gap-5 lg:items-end lg:pb-2"
+            transition={{ duration: 0.7, delay: 0.08, ease }}
+            className="lg:pb-2"
           >
-            <p className="max-w-md text-base leading-7 text-slate-600 sm:text-lg sm:leading-8 lg:text-right">
-              A thoughtful journey from community generosity to practical
-              support — with dignity at every step.
+            <p className="max-w-lg text-sm leading-7 text-slate-600 sm:text-base sm:leading-8 lg:text-[17px]">
+              Shop4Free turns community generosity into practical support,
+              creating an experience where people are welcomed, respected,
+              and free to choose what their households need.
             </p>
 
-            <div className="flex items-center gap-3 text-sm font-semibold text-[#0B2265]">
-              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#fff2c7] text-[#0B2265]">
+            <div className="mt-6 flex items-center gap-3">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#0B2265]/10 bg-white text-[#0B2265] shadow-sm">
                 <TeamOutlined />
               </span>
-              Powered by people who care
+              <div>
+                <p className="text-xs font-bold text-[#0B2265] sm:text-sm">
+                  A community effort
+                </p>
+                <p className="mt-0.5 text-xs text-slate-500">
+                  Made possible by people who care.
+                </p>
+              </div>
             </div>
           </motion.div>
         </div>
 
-        <div className="relative mt-16 sm:mt-20 lg:mt-24">
+        {/* Three-step journey */}
+        <div className="relative mt-12 sm:mt-16 lg:mt-20">
+          {/* Journey connector on larger screens */}
           <div
             aria-hidden="true"
-            className="absolute bottom-12 left-[27px] top-10 hidden w-px bg-slate-200 md:block lg:left-[43px]"
+            className="absolute left-[8.333%] right-[8.333%] top-[35px] hidden h-px bg-gradient-to-r from-[#FFC72C]/70 via-[#00A3E0]/50 to-[#00A859]/60 lg:block"
           />
 
-          <div className="space-y-5 md:space-y-8">
+          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
             {steps.map((step, index) => {
               const Icon = step.icon;
 
               return (
                 <motion.article
                   key={step.number}
-                  initial={reduceMotion ? false : { opacity: 0, y: 24 }}
+                  initial={
+                    reduceMotion ? false : { opacity: 0, y: 24 }
+                  }
                   whileInView={
                     reduceMotion ? undefined : { opacity: 1, y: 0 }
                   }
-                  viewport={{ once: true, amount: 0.2 }}
+                  viewport={{ once: true, amount: 0.18 }}
                   transition={{
                     duration: 0.65,
-                    delay: reduceMotion ? 0 : index * 0.1,
+                    delay: reduceMotion ? 0 : index * 0.12,
                     ease,
                   }}
-                  className="group relative grid gap-5 md:grid-cols-[76px_minmax(0,1fr)] lg:grid-cols-[96px_minmax(0,1fr)] lg:gap-8"
+                  className={`group relative flex min-w-0 flex-col overflow-hidden rounded-[22px] border border-slate-200/80 bg-white transition-[border-color,box-shadow,transform] duration-300 hover:-translate-y-1 hover:border-slate-300 hover:shadow-[0_24px_65px_-40px_rgba(11,34,101,0.3)] ${
+                    index === 1 ? "md:col-span-2 lg:col-span-1" : ""
+                  }`}
                 >
-                  <div className="relative z-10 hidden pt-7 md:flex md:justify-center lg:justify-start">
-                    <span className="flex h-14 w-14 items-center justify-center rounded-full border border-slate-200 bg-white text-xs font-extrabold tracking-wider text-[#0B2265] shadow-sm transition-colors duration-300 group-hover:border-[#00A3E0] group-hover:bg-[#0B2265] group-hover:text-white">
-                      {step.number}
-                    </span>
-                  </div>
-
-                  <div className="grid overflow-hidden rounded-[1.5rem] border border-slate-200/80 bg-white transition-all duration-300 hover:border-slate-300 hover:shadow-[0_18px_55px_-38px_rgba(11,34,101,0.35)] sm:grid-cols-[180px_minmax(0,1fr)] lg:grid-cols-[230px_minmax(0,1fr)]">
+                  {/* Coloured card header */}
+                  <div
+                    className="relative flex min-h-[185px] items-center justify-between overflow-hidden px-6 py-6 sm:min-h-[205px] sm:px-7"
+                    style={{ backgroundColor: step.wash }}
+                  >
                     <div
-                      className={`relative flex min-h-[155px] items-center justify-center overflow-hidden ${step.bg} sm:min-h-[220px]`}
-                    >
-                      <span
-                        aria-hidden="true"
-                        className="absolute -right-7 -top-12 h-36 w-36 rounded-full border-[22px] border-white/50 sm:h-44 sm:w-44"
-                      />
-                      <span
-                        aria-hidden="true"
-                        className="absolute -bottom-10 -left-8 h-24 w-24 rounded-full bg-white/45"
-                      />
+                      aria-hidden="true"
+                      className="absolute -right-9 -top-14 h-48 w-48 rounded-full border-[24px] border-white/45 transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div
+                      aria-hidden="true"
+                      className="absolute -bottom-12 left-1/3 h-28 w-28 rounded-full bg-white/45"
+                    />
 
-                      <span className="absolute left-5 top-4 text-xs font-bold tracking-[0.18em] text-[#0B2265]/60 md:hidden">
+                    <div className="relative z-10 flex h-full flex-col justify-between self-stretch">
+                      <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#0B2265]/65">
                         STEP {step.number}
                       </span>
 
-                      <div className="relative flex h-[76px] w-[76px] items-center justify-center rounded-[1.5rem] bg-white shadow-sm transition-transform duration-300 group-hover:-translate-y-1 group-hover:rotate-[-4deg]">
-                        <Icon
-                          style={{ color: step.accent }}
-                          className="text-3xl"
-                        />
+                      <div className="mt-8">
+                        <p className="text-[10px] font-bold uppercase tracking-[0.17em] text-[#0B2265]/55">
+                          {step.label}
+                        </p>
+                        <p className="mt-2 max-w-[210px] text-sm font-medium leading-5 text-[#0B2265]/80">
+                          {step.note}
+                        </p>
                       </div>
                     </div>
 
-                    <div className="flex flex-col justify-center p-6 sm:p-8 lg:p-10">
-                      <div className="flex flex-wrap items-center gap-3">
-                        <span
-                          className="h-2 w-2 rounded-full"
-                          style={{ backgroundColor: step.accent }}
-                        />
-                        <p className="text-[10px] font-extrabold tracking-[0.2em] text-slate-500 sm:text-xs">
-                          {step.label}
-                        </p>
-                      </div>
+                    <div
+                      className="relative z-10 flex h-[74px] w-[74px] shrink-0 items-center justify-center rounded-[22px] bg-white shadow-[0_10px_30px_-15px_rgba(11,34,101,0.3)] transition-transform duration-500 group-hover:rotate-[-5deg] group-hover:scale-105 sm:h-[82px] sm:w-[82px]"
+                    >
+                      <Icon
+                        style={{ color: step.accent }}
+                        className="text-[30px] sm:text-[34px]"
+                      />
+                    </div>
 
-                      <h3 className="mt-4 text-2xl font-extrabold leading-tight tracking-tight text-[#0B2265] sm:text-3xl lg:text-[2rem]">
-                        {step.title}
-                      </h3>
+                    <span className="absolute bottom-0 left-0 h-[3px] w-full origin-left scale-x-0 transition-transform duration-500 group-hover:scale-x-100" style={{ backgroundColor: step.accent }} />
+                  </div>
 
-                      <p className="mt-3 max-w-xl text-sm leading-7 text-slate-600 sm:text-base sm:leading-8">
-                        {step.description}
-                      </p>
+                  {/* Card content */}
+                  <div className="flex flex-1 flex-col p-6 sm:p-7">
+                    <h3 className="text-xl font-bold leading-snug tracking-tight text-[#0B2265] sm:text-2xl">
+                      {step.title}
+                    </h3>
 
-                      <div className="mt-6 flex flex-wrap items-center justify-between gap-4 border-t border-slate-100 pt-5">
-                        <span className="text-[10px] font-bold tracking-[0.14em] text-slate-400 sm:text-xs">
-                          {step.detail}
-                        </span>
-                      </div>
+                    <p className="mt-3 flex-1 text-sm leading-7 text-slate-600">
+                      {step.description}
+                    </p>
+
+                    <div className="mt-7 flex items-center justify-between gap-3 border-t border-slate-100 pt-5">
+                      <span className="text-[9px] font-bold uppercase tracking-[0.14em] text-slate-400 sm:text-[10px]">
+                        {step.detail}
+                      </span>
+
+                      <span
+                        aria-hidden="true"
+                        className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-slate-200 text-[#0B2265] transition-all duration-300 group-hover:border-[#0B2265] group-hover:bg-[#0B2265] group-hover:text-white"
+                      >
+                        <ArrowRightOutlined className="text-[11px]" />
+                      </span>
                     </div>
                   </div>
                 </motion.article>
@@ -180,41 +221,66 @@ export const Shop4FreeHowItWorks = () => {
           </div>
         </div>
 
+        {/* Closing invitation */}
         <motion.div
-          initial={reduceMotion ? false : { opacity: 0, y: 20 }}
+          initial={reduceMotion ? false : { opacity: 0, y: 18 }}
           whileInView={reduceMotion ? undefined : { opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.6, ease }}
-          className="relative mt-12 overflow-hidden rounded-[1.5rem] bg-[#0B2265] sm:mt-16"
+          transition={{ duration: 0.65, ease }}
+          className="relative mt-8 overflow-hidden rounded-[24px] bg-[#0B2265] sm:mt-12 sm:rounded-[30px]"
         >
           <div
             aria-hidden="true"
-            className="absolute -right-12 -top-24 h-64 w-64 rounded-full border-[35px] border-white/[0.06] sm:-right-4"
+            className="pointer-events-none absolute -right-16 -top-28 h-72 w-72 rounded-full border-[38px] border-white/[0.055] sm:right-12"
           />
           <div
             aria-hidden="true"
-            className="absolute -bottom-20 right-40 h-44 w-44 rounded-full bg-[#00A3E0]/15 blur-2xl"
+            className="pointer-events-none absolute -bottom-28 left-[38%] h-64 w-64 rounded-full bg-[#00A3E0]/20 blur-[70px]"
+          />
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute bottom-0 left-0 top-0 w-1 bg-[#FFC72C]"
           />
 
-          <div className="relative flex flex-col gap-7 p-7 sm:p-9 lg:flex-row lg:items-center lg:justify-between lg:px-12 lg:py-10">
-            <div className="flex items-start gap-4 sm:gap-5">
-              <div>
-                <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#41B6E6]">
+          <div className="relative flex flex-col gap-7 p-6 pl-8 sm:p-9 sm:pl-11 lg:flex-row lg:items-center lg:justify-between lg:gap-10 lg:px-12 lg:py-11">
+            <div className="max-w-2xl">
+              <div className="flex items-center gap-2 text-[#41B6E6]">
+                <p className="text-[10px] font-bold uppercase tracking-[0.22em] sm:text-xs">
                   Be part of the story
                 </p>
-                <h3 className="mt-2 max-w-xl text-xl font-extrabold leading-snug text-white sm:text-2xl lg:text-3xl">
-                  There is a place for you in this work.
-                </h3>
-                <p className="mt-2 max-w-lg text-sm leading-6 text-white/70 sm:text-base sm:leading-7">
-                  Give, volunteer, or partner with us to bring practical care
-                  to more families.
-                </p>
+              </div>
+
+              <h3 className="mt-3 text-2xl font-semibold leading-tight tracking-tight text-white sm:text-3xl lg:text-4xl">
+                Compassion works better{" "}
+                <span className="font-serif font-normal italic text-[#FFC72C]">
+                  together.
+                </span>
+              </h3>
+
+              <p className="mt-3 max-w-xl text-sm leading-6 text-white/70 sm:text-base sm:leading-7">
+                Your time, generosity, or partnership can help bring practical
+                care and encouragement to more people.
+              </p>
+
+              <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-[11px] font-medium text-white/80 sm:text-xs">
+                <span className="inline-flex items-center gap-2">
+                  <CheckOutlined className="text-[#FFC72C]" />
+                  Give
+                </span>
+                <span className="inline-flex items-center gap-2">
+                  <CheckOutlined className="text-[#FFC72C]" />
+                  Volunteer
+                </span>
+                <span className="inline-flex items-center gap-2">
+                  <CheckOutlined className="text-[#FFC72C]" />
+                  Partner
+                </span>
               </div>
             </div>
 
             <a
               href="#shop4free-get-involved"
-              className="group inline-flex min-h-12 shrink-0 items-center justify-center gap-3 self-start rounded-xl bg-[#FFC72C] px-6 py-3 text-sm font-bold text-[#0B2265] transition-colors hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B2265] lg:self-center"
+              className="group inline-flex min-h-12 shrink-0 items-center justify-center gap-3 self-start rounded-xl bg-[#FFC72C] px-6 py-3 text-sm font-bold text-[#0B2265] shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B2265] lg:self-center"
             >
               Get involved
               <ArrowRightOutlined className="transition-transform duration-300 group-hover:translate-x-1" />

@@ -12,7 +12,8 @@ const navLinks = [
     label: "Our Church",
     href: "/about",
     children: [
-      { label: "About Us", href: "/about" },
+      { label: "Who We Are", href: "/about" },
+      { label: "Our Story", href: "/about/#our-story" },
       { label: "Our Pastors", href: "/about/#pastors" },
       { label: "Our Locations", href: "/about/#locations" },
     ],
