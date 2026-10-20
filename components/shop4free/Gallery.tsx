@@ -12,14 +12,14 @@ import {
 } from "@ant-design/icons";
 
 const galleryImages = [
-  { src: "/images/shop4free/one.png", alt: "Shop4Free community outreach moment" },
-  { src: "/images/shop4free/two.png", alt: "Shop4Free in action" },
-  { src: "/images/shop4free/three.png", alt: "Community members at Shop4Free" },
-  { src: "/images/shop4free/four.png", alt: "A moment of generosity and care" },
-  { src: "/images/shop4free/five.png", alt: "Shop4Free community experience" },
-  { src: "/images/shop4free/six.png", alt: "Volunteers serving the community" },
+  { src: "/images/shop4free/one.PNG", alt: "Shop4Free community outreach moment" },
+  { src: "/images/shop4free/two.PNG", alt: "Shop4Free in action" },
+  { src: "/images/shop4free/three.PNG", alt: "Community members at Shop4Free" },
+  { src: "/images/shop4free/four.PNG", alt: "A moment of generosity and care" },
+  { src: "/images/shop4free/five.PNG", alt: "Shop4Free community experience" },
+  { src: "/images/shop4free/six.PNG", alt: "Volunteers serving the community" },
   { src: "/images/shop4free/seven.jpg", alt: "Shop4Free outreach activities" },
-  { src: "/images/shop4free/eight.png", alt: "People coming together through Shop4Free" },
+  { src: "/images/shop4free/eight.PNG", alt: "People coming together through Shop4Free" },
   { src: "/images/shop4free/nine.jpg", alt: "A memorable Shop4Free moment" },
   { src: "/images/shop4free/ten.jpg", alt: "Compassion in action" },
   { src: "/images/shop4free/eleven.jpg", alt: "Shop4Free community gathering" },

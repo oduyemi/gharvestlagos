@@ -99,7 +99,7 @@ export const Shop4FreeStory = () => {
         >
           <div className="group relative min-h-[330px] overflow-hidden sm:min-h-[440px] lg:min-h-[500px]">
             <Image
-              src="/images/shop4free/story.png"
+              src="/images/shop4free/story.PNG"
               alt="Shop4Free community outreach in action"
               fill
               sizes="(max-width: 1024px) 100vw, 65vw"
