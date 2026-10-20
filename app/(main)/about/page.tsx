@@ -38,9 +38,7 @@ export default function AboutPage() {
     <main>
       <AboutHero />
       <AboutIntro />
-
       <AboutMissionVision />
-
       <AboutValues />
       <AboutHistory />
       <AboutPurposes />
