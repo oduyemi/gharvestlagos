@@ -1,42 +1,52 @@
 
-import {AboutHero} from "@/components/about/Hero";
-import {AboutHistory} from "@/components/about/History";
-import {AboutIntro} from "@/components/about/Intro";
-import {AboutPurposes} from "@/components/about/Purposes";
-import {AboutValues} from "@/components/about/Values";
 import type { Metadata } from "next";
 
+import {AboutHero} from "@/components/about/Hero";
+import {AboutIntro} from "@/components/about/Intro";
+import {AboutMissionVision} from "@/components/about/MissionVision";
+import {AboutValues} from "@/components/about/Values";
+import {AboutHistory} from "@/components/about/History";
+import {AboutPurposes} from "@/components/about/Purposes";
+import {AboutLocations} from "@/components/about/Locations";
+import {AboutCTA} from "@/components/about/CTA";
 
 export const metadata: Metadata = {
-  title: "Shop4Free | Compassion in Action | Global Harvest Church",
+  title: "About Us | Global Harvest Church Maryland, Lagos",
   description:
-    "Discover Shop4Free, Global Harvest Church's community outreach initiative launched in 2011 to support struggling families and community workers with practical assistance, dignity, and hope.",
+    "Discover Global Harvest Church, Maryland, Lagos — a Christian community committed to helping people discover their God-given purpose through life-transforming experiences with Christ.",
   alternates: {
-    canonical: "/shop4free",
+    canonical: "/about",
   },
   openGraph: {
-    title: "Shop4Free | Global Harvest Church",
+    title: "About Us | Global Harvest Church Maryland, Lagos",
     description:
-      "A practical expression of compassion offering hope, dignity, and material support to communities in need.",
-    url: "/shop4free",
+      "Discover our mission, vision, FLoAT values and the story of the wider Global Harvest Church ministry.",
+    url: "/about",
     type: "website",
     images: [
       {
-        url: "/images/shop4free/hero.jpg",
-        alt: "Shop4Free community outreach by Global Harvest Church",
+        url: "/images/about/about-hero.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Global Harvest Church, Maryland, Lagos",
       },
     ],
   },
 };
 
-export default function AboutAwa() {
+export default function AboutPage() {
   return (
     <main>
       <AboutHero />
       <AboutIntro />
+
+      <AboutMissionVision />
+
       <AboutValues />
       <AboutHistory />
       <AboutPurposes />
+      <AboutLocations />
+      <AboutCTA />
     </main>
   );
 }

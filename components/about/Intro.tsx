@@ -258,18 +258,6 @@ export const AboutIntro = () => {
                 );
               })}
             </div>
-
-            <div className="mt-7 flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between sm:gap-5">
-              <Link
-                href="#our-mission"
-                className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-full bg-[#0B2265] px-6 py-3 text-sm font-bold text-white shadow-[0_8px_24px_rgba(11,34,101,0.16)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#00A3E0] hover:shadow-[0_10px_28px_rgba(0,163,224,0.2)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00A3E0] focus-visible:ring-offset-2"
-              >
-                Explore our mission
-                <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/10 transition-transform duration-300 group-hover:translate-x-1">
-                  <ArrowRightOutlined className="text-xs" />
-                </span>
-              </Link>
-            </div>
           </motion.div>
         </div>
       </div>
