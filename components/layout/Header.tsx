@@ -13,9 +13,11 @@ const navLinks = [
     href: "/about",
     children: [
       { label: "Who We Are", href: "/about" },
+      { label: "What We Believe", href: "/about/#our-values" },
       { label: "Our Story", href: "/about/#our-story" },
       { label: "Our Pastors", href: "/about/#pastors" },
-      { label: "Our Locations", href: "/about/#locations" },
+      { label: "Our Location", href: "/about/#our-services" },
+      { label: "Our zones", href: "/our-zones" },
     ],
   },
   { label: "Missional Communities", href: "/missional-communities" },
