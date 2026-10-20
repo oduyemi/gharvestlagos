@@ -85,7 +85,7 @@ export const AboutIntro = () => {
             <div className="group relative mr-4 overflow-hidden rounded-[1.5rem] bg-[#DCE4EA] shadow-[0_24px_65px_rgba(7,23,68,0.17)] sm:mr-7 sm:rounded-[2rem]">
               <div className="relative aspect-[4/4.8] sm:aspect-[4/4.5]">
                 <Image
-                  src="/images/about/community.JPG"
+                  src="/images/about/community.jpg"
                   alt="Members of Global Harvest Church Maryland gathering in faith and fellowship"
                   fill
                   priority={false}
