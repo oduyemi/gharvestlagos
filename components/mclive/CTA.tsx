@@ -8,7 +8,6 @@ import {
   ArrowRightOutlined,
   CalendarOutlined,
   EnvironmentOutlined,
-  HeartFilled,
   StarFilled,
 } from "@ant-design/icons";
 
@@ -29,12 +28,6 @@ export const MCLiveWOWCTA = () => {
         aria-hidden="true"
         className="pointer-events-none absolute -bottom-32 -left-24 -z-10 h-80 w-80 rounded-full bg-brand-orange/10 blur-3xl"
       />
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute right-[8%] top-16 hidden text-5xl text-brand-orange/20 sm:block"
-      >
-        ✳
-      </div>
 
       <div className="gh-container relative px-4 sm:px-6 lg:px-8">
         <motion.div
