@@ -1,0 +1,31 @@
+
+{
+    "id": "/",
+    "name": "Global Harvest Church Maryland, Lagos",
+    "short_name": "Global Harvest",
+    "description": "The official website of Global Harvest Church, Maryland, Lagos, Nigeria. Find Sunday worship services, Wednesday prayer and communion, church leadership, ministries, events, and directions to our church on Ikorodu Road.",
+    "lang": "en-NG",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "background_color": "#F7FAFF",
+    "theme_color": "#0B2265",
+    "icons": [
+      {
+        "src": "/logo192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/logo512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      },
+      {
+        "src": "/apple-touch-icon.png",
+        "sizes": "180x180",
+        "type": "image/png"
+      }
+    ]
+  }
+  
