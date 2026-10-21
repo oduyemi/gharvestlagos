@@ -167,7 +167,7 @@ export default function MCBenefits() {
             </p>
 
             <Link
-              href="#find-your-community"
+              href="/mc-live/#find-your-community"
               className="group inline-flex items-center gap-3 border-b border-[#FFC72C]/60 pb-2 text-sm font-semibold text-[#FFC72C] transition-colors hover:border-[#FFC72C] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC72C] focus-visible:ring-offset-4 focus-visible:ring-offset-[#071744]"
             >
               Discover your place here
