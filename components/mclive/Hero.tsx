@@ -229,7 +229,7 @@ export const MCLiveHero = () => {
 
           <motion.div variants={fadeUp} className="mt-6">
             <Link
-              href="#find-your-mc"
+              href="/mc-live/#find-your-community"
               className="group inline-flex items-center gap-2.5 text-xs font-semibold text-white/85 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-cyan sm:text-sm"
             >
               <span className="flex h-7 w-7 items-center justify-center rounded-full border border-white/35 bg-[#07152f]/20 transition-colors group-hover:border-brand-gold group-hover:text-brand-gold">
@@ -340,7 +340,7 @@ export const MCLiveHero = () => {
             </div>
 
             <Link
-              href="#find-your-mc"
+              href="/mc-live/#find-your-community"
               className="group mt-5 flex min-h-12 w-full items-center justify-between gap-3 rounded-xl bg-white px-4 py-3 text-sm font-extrabold text-brand-blue-dark transition duration-300 hover:bg-brand-cyan focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:ring-offset-2 focus-visible:ring-offset-[#091a3b] sm:px-5"
             >
               <span className="flex items-center gap-2.5">

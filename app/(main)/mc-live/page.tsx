@@ -1,5 +1,7 @@
 
 import { MCLiveAbout } from "@/components/mclive/About";
+import { MCLiveWOWCTA } from "@/components/mclive/CTA";
+import { MCLiveFindYourCommunity } from "@/components/mclive/Find";
 import { MCLiveHero } from "@/components/mclive/Hero";
 import { MCLiveHighlights } from "@/components/mclive/Highlights";
 import type { Metadata } from "next";
@@ -35,6 +37,8 @@ export default function MCOnline() {
       <MCLiveHero />
       <MCLiveAbout />
       <MCLiveHighlights/>
+      <MCLiveFindYourCommunity />
+      <MCLiveWOWCTA />
     </main>
   );
 }

@@ -276,7 +276,7 @@ export const MCLiveAbout = () => {
                 </div>
 
                 <Link
-                  href="#find-your-mc"
+                  href="/mc-live/find-your-mc"
                   className="group relative mt-5 inline-flex min-h-10 items-center gap-2.5 rounded-full bg-brand-gold px-4 py-2.5 text-xs font-extrabold text-brand-blue-dark transition duration-300 hover:gap-3.5 hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-cyan focus-visible:ring-offset-2 focus-visible:ring-offset-brand-blue-dark sm:text-sm"
                 >
                   Help me find my MC
