@@ -300,15 +300,6 @@ export const MCLiveFindYourCommunity = () => {
                 </div>
 
                 <div>
-                  <label
-                    htmlFor="mc-residential-area"
-                    className={labelClassName}
-                  >
-                    Where do you live?{" "}
-                    <span className="text-red-500">*</span>
-                  </label>
-
-                  <div>
                     <label
                         htmlFor="mc-residential-area"
                         className={labelClassName}
@@ -329,7 +320,7 @@ export const MCLiveFindYourCommunity = () => {
                         type="text"
                         autoComplete="address-level2"
                         required
-                        placeholder="e.g. Maryland, Ikeja, Yaba..."
+                        placeholder="e.g. Sholuyi, Gbagada or Ikosi, Ketu..."
                         className="w-full rounded-2xl border border-gray-200/90 bg-[#F8FAFC] py-3.5 pl-11 pr-4 text-sm text-brand-blue-dark outline-none transition duration-200 placeholder:text-gray-400 hover:border-gray-300 focus:border-brand-cyan focus:bg-white focus:ring-4 focus:ring-brand-cyan/10"
                         />
                     </div>
@@ -337,7 +328,6 @@ export const MCLiveFindYourCommunity = () => {
                     <p className="mt-2.5 text-xs leading-5 text-gray-500">
                         Your neighbourhood helps us suggest a suitable community.
                     </p>
-                    </div>
                 </div>
                 {/* Interactive attendance cards */}
                 <fieldset>
