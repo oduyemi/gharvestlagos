@@ -149,9 +149,6 @@ export const MCLiveWOWCTA = () => {
                   </p>
 
                   <div className="mt-6 flex items-center gap-3 border-t border-white/20 pt-5">
-                    <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white/15 text-brand-gold backdrop-blur-sm">
-                      <HeartFilled />
-                    </div>
                     <span className="text-xs font-semibold text-white/90 sm:text-sm">
                       More than a service. A family.
                     </span>
