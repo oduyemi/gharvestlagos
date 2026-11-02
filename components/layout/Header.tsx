@@ -25,6 +25,7 @@ const navLinks = [
     label: "Resources",
     href: "/resources",
     children: [
+      { label: "Global Harvest Resources", href: "/resources" },
       { label: "Blog", href: "/blog" },
       { label: "Books", href: "/books" },
       { label: "Sermons", href: "/sermons" },
