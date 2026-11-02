@@ -1,4 +1,3 @@
-
 import type { Metadata } from "next";
 import { WorshipHero } from "@/components/worship-online/Hero";
 import { LiveWorship } from "@/components/worship-online/LiveWorship";

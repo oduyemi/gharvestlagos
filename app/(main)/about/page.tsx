@@ -1,4 +1,3 @@
-
 import type { Metadata } from "next";
 import {AboutHero} from "@/components/about/Hero";
 import {AboutIntro} from "@/components/about/Intro";

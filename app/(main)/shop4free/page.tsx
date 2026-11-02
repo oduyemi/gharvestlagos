@@ -1,4 +1,3 @@
-
 import type { Metadata } from "next";
 import { Shop4FreeHero } from "@/components/shop4free/Hero";
 import { Shop4FreeStory } from "@/components/shop4free/Story";

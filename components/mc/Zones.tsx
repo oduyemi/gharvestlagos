@@ -22,7 +22,7 @@ const zones: Zone[] = [
   {
     id: 1,
     name: "Zone 1",
-    areas: ["Areas to be confirmed"],
+    areas: ["Mende", "Wasimi", "Ogudu", "Ojota", "Gold City"],
     communities: [
       {
         id: "z1-placeholder-1",
@@ -43,7 +43,7 @@ const zones: Zone[] = [
   {
     id: 2,
     name: "Zone 2",
-    areas: ["Areas to be confirmed"],
+    areas: ["Isolo", "Lawanson", "Ago Palace"],
     communities: [
       {
         id: "z2-placeholder-1",
@@ -64,7 +64,7 @@ const zones: Zone[] = [
   {
     id: 3,
     name: "Zone 3",
-    areas: ["Areas to be confirmed"],
+    areas: ["Ketu", "Alapere", "Ikosi", "Iyana School", "Mile 12", "Owode", "Weighbridge", "Idera", "Irawo", "Ajegunle", "Majidun", "Ogolonto", "Ebute", "Igbogbo", "Agric", "Ikorodu Axis"],
     communities: [
       {
         id: "z3-placeholder-1",
@@ -85,7 +85,7 @@ const zones: Zone[] = [
   {
     id: 4,
     name: "Zone 4",
-    areas: ["Areas to be confirmed"],
+    areas: ["Ikeja", "Shonibare Estate", "Opebi Allen", "Adeniyi Jones", "Ikeja Along", "Mangoro", "Alausa", "Marwa Garden", "Police Baracks", "Ojota/Oregun", "Ogba", "LSPDC - Agege", "Iju - Akowonjo", "Dopemu","Egbeda", "Ipaja", "Abule Egba", "Igando"  ],
     communities: [
       {
         id: "z4-placeholder-1",
@@ -106,7 +106,7 @@ const zones: Zone[] = [
   {
     id: 5,
     name: "Zone 5",
-    areas: ["Areas to be confirmed"],
+    areas: ["Omole Phase 1", "Omole Phase 2", "Unilag Estate", "Isheri Axis", "Olowora", "Grammar School", "Ojodu Berger", "Ojodu Abiodun", "River Valley", "Opic Estate", "Magodo Isheri", "Magodo Phase 2", "Ajuwon", "Alagbole", "Akute"],
     communities: [
       {
         id: "z5-placeholder-1",
@@ -127,7 +127,7 @@ const zones: Zone[] = [
   {
     id: 6,
     name: "Zone 6",
-    areas: ["Areas to be confirmed"],
+    areas: ["Obalende", "Lekki", "Ajah", "Ikota", "Awoyaya", "Epe", "Jakande", "Chevron"],
     communities: [
       {
         id: "z6-placeholder-1",
@@ -148,7 +148,7 @@ const zones: Zone[] = [
   {
     id: 7,
     name: "Zone 7",
-    areas: ["Gbagada", "Ifako", "Anthony", "Palmgroove", "Onipan"],
+    areas: ["Anthony", "Millenium Estate", "Gbagada", "Ifako", "New Garage", "Fola Agoro", "Fadeyi", "WAEC", "Yaba", "Palmgroove", "Onipaanu", "Makoko", "Ebute Meta", "Iwaya", "Costain", "Apapa", "Igbobi", "Jibowu", "Abule Ijesha", "Unilag Road", "Abule Oja"],
     communities: [
       {
         id: "z7-joy-tribe",
@@ -222,15 +222,12 @@ const zoneThemes = [
 export const MCZones = () => {
   const [search, setSearch] = useState("");
   const [activeZone, setActiveZone] = useState<number>(7);
-
   const query = search.trim().toLowerCase();
 
   const filteredZones = useMemo(() => {
-    if (!query) return zones;
-
+      if (!query) return zones;
     return zones.filter((zone) => {
       const zoneMatches = zone.name.toLowerCase().includes(query);
-
       const areaMatches = zone.areas.some((area) =>
         area.toLowerCase().includes(query),
       );
@@ -396,7 +393,7 @@ export const MCZones = () => {
                       if (match) setActiveZone(match.id);
                     }
                   }}
-                  placeholder="Try Gbagada or JOY Tribe"
+                  placeholder="Try Ifako or Ifako MC"
                   className="min-h-12 w-full rounded-xl border border-slate-200 bg-[#F8FAFC] pl-11 pr-4 text-sm text-brand-blue-dark outline-none transition placeholder:text-slate-400 focus:border-brand-cyan focus:bg-white focus:ring-4 focus:ring-brand-cyan/10"
                 />
               </label>
@@ -587,7 +584,7 @@ export const MCZones = () => {
                     </h4>
 
                     <span className="text-xs text-slate-400">
-                      {selectedZone.id === 7
+                      {selectedZone.id === 1
                         ? "Local connections"
                         : "Directory listings"}
                     </span>
