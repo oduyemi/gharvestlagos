@@ -1,4 +1,3 @@
-
 import type { Metadata } from "next";
 import { ResourcesHero } from "@/components/resources/Hero";
 import { ResourcesCategories } from "@/components/resources/Categories";

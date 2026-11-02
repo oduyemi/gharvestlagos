@@ -6,7 +6,6 @@ import {
   BookOpen,
   Headphones,
   Play,
-  Sparkles,
   Star,
   Bookmark,
   AudioLines,
@@ -50,21 +49,17 @@ export const ResourcesCategories = () => {
       id="resource-categories"
       className="relative isolate overflow-hidden bg-[#F8F7F2] py-20 sm:py-24 lg:py-32"
     >
-      {/* Background details */}
       <div className="pointer-events-none absolute -left-32 top-48 h-72 w-72 rounded-full bg-brand-cyan/[0.06] blur-3xl" />
       <div className="pointer-events-none absolute -right-32 bottom-20 h-96 w-96 rounded-full bg-brand-gold/[0.09] blur-3xl" />
 
       <div className="gh-container relative px-5 sm:px-8 lg:px-10 xl:px-12">
-        {/* Section introduction */}
         <motion.div
         {...motionProps()}
         className="relative mb-12 sm:mb-16 lg:mb-20"
         >
         <div className="grid items-end gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16">
 
-            {/* Left: Editorial heading */}
             <div className="relative">
-            {/* Collection identifier */}
             <div className="mb-7 inline-flex items-center gap-3">
                 <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-brand-blue-dark text-brand-gold shadow-sm">
                 <Bookmark size={16} />
@@ -80,7 +75,6 @@ export const ResourcesCategories = () => {
                 </div>
             </div>
 
-            {/* Main headline */}
             <h2 className="max-w-3xl text-[2.65rem] font-black leading-[1.04] tracking-[-0.055em] text-brand-blue-dark sm:text-5xl lg:text-[4.25rem]">
                 A world of inspiration,
                 <br className="hidden sm:block" />
@@ -103,7 +97,6 @@ export const ResourcesCategories = () => {
             </h2>
             </div>
 
-            {/* Right: Supporting message */}
             <div className="relative lg:pb-2">
             <div className="mb-5 hidden h-px w-16 bg-brand-cyan lg:block" />
 
@@ -113,7 +106,6 @@ export const ResourcesCategories = () => {
                 inspire the way you live.
             </p>
 
-            {/* Category indicators */}
             <div className="mt-7 flex flex-wrap items-center gap-3">
                 <span className="inline-flex items-center gap-2 rounded-full border border-brand-cyan/15 bg-white px-3.5 py-2 text-[10px] font-bold uppercase tracking-[0.12em] text-brand-blue-dark shadow-sm">
                 <BookOpen size={13} className="text-brand-cyan" />
@@ -133,7 +125,6 @@ export const ResourcesCategories = () => {
             </div>
         </div>
 
-        {/* Editorial footer */}
         <div className="mt-9 flex items-center gap-4 sm:mt-12">
             <div className="h-px flex-1 bg-[#E4E2D9]" />
             <span className="text-[9px] font-bold uppercase tracking-[0.22em] text-gray-400">
@@ -147,10 +138,7 @@ export const ResourcesCategories = () => {
         </div>
         </motion.div>
 
-        {/* Resource experiences */}
         <div className="grid gap-5 lg:grid-cols-12 lg:gap-6">
-
-          {/* BLOG — Editorial feature */}
           <motion.article
             {...motionProps()}
             className="group relative isolate overflow-hidden rounded-[2rem] border border-[#E8E7E0] bg-white lg:col-span-7"
@@ -160,7 +148,6 @@ export const ResourcesCategories = () => {
               aria-label="Explore the Global Harvest Church blog"
               className="relative flex min-h-[510px] flex-col justify-between p-7 sm:p-10 lg:min-h-[590px] lg:p-12"
             >
-              {/* Decorative background */}
               <div className="pointer-events-none absolute -right-20 top-12 h-80 w-80 rounded-full bg-[#E9F7FB] transition-transform duration-700 group-hover:scale-110" />
               <div className="pointer-events-none absolute -right-10 top-24 h-64 w-64 rounded-full border border-brand-cyan/15" />
 
@@ -200,7 +187,6 @@ export const ResourcesCategories = () => {
                 </div>
               </div>
 
-              {/* Floating editorial note */}
               <motion.div
                 animate={
                   reduceMotion
@@ -223,7 +209,6 @@ export const ResourcesCategories = () => {
                 <div className="mt-3 h-1 w-8 rounded-full bg-brand-blue-dark/30" />
               </motion.div>
 
-              {/* Large editorial number */}
               <span className="pointer-events-none absolute -bottom-12 right-3 text-[13rem] font-black leading-none tracking-[-0.1em] text-brand-cyan/[0.045] transition-transform duration-700 group-hover:-translate-y-3 lg:right-8 lg:text-[17rem]">
                 01
               </span>
@@ -234,10 +219,8 @@ export const ResourcesCategories = () => {
             </Link>
           </motion.article>
 
-          {/* RIGHT COLUMN */}
           <div className="grid gap-5 lg:col-span-5 lg:gap-6">
 
-            {/* BOOKS — Playful bookstore */}
             <motion.article
               {...motionProps(0.1)}
               className="group relative isolate min-h-[390px] overflow-hidden rounded-[2rem] bg-[#FCEBCF] p-7 sm:p-9 lg:min-h-0 lg:flex-1"
@@ -266,7 +249,6 @@ export const ResourcesCategories = () => {
                 </p>
               </div>
 
-              {/* Dimensional book composition */}
               <div className="pointer-events-none relative my-7 flex h-[145px] items-center justify-center">
                 <motion.div
                   animate={
@@ -330,7 +312,6 @@ export const ResourcesCategories = () => {
               </span>
             </motion.article>
 
-            {/* AUDIO — Midnight listening room */}
             <motion.article
               {...motionProps(0.2)}
               className="group relative isolate min-h-[390px] overflow-hidden rounded-[2rem] bg-[#091B40] p-7 text-white sm:p-9 lg:min-h-0 lg:flex-1"
@@ -360,7 +341,6 @@ export const ResourcesCategories = () => {
                 </p>
               </div>
 
-              {/* Sound visual */}
               <div className="relative my-7 flex h-[125px] items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-white/[0.045]">
                 <div className="absolute inset-0 flex items-center justify-center gap-[3px] px-4">
                   {waveform.map((height, index) => (
