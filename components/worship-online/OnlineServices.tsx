@@ -78,6 +78,21 @@ function getVideoDescription(description: string): string {
     : "Spend time in the Word and reflect on this message from Global Harvest Church.";
 }
 
+function deduplicateVideos(videos: ServiceVideo[]): ServiceVideo[] {
+  const seen = new Set<string>();
+
+  return videos.filter((video) => {
+    const videoId = video?.videoId?.trim();
+
+    if (!videoId || seen.has(videoId)) {
+      return false;
+    }
+
+    seen.add(videoId);
+    return true;
+  });
+}
+
 function VideoSkeleton() {
   return (
     <div className="overflow-hidden rounded-2xl border border-[#e9e6df] bg-white">
@@ -138,20 +153,16 @@ export const OnlineServices = () => {
         }
 
         if (append) {
-          setVideos((current) => {
-            const existingIds = new Set(current.map((video) => video.videoId));
-            const uniqueNewVideos = data.videos.filter(
-              (video) => !existingIds.has(video.videoId),
-            );
-
-            return [...current, ...uniqueNewVideos];
-          });
+          setVideos((current) =>
+            deduplicateVideos([...current, ...data.videos])
+          );
         } else {
-          setVideos(data.videos);
-          setSelectedVideo(data.videos[0] ?? null);
+          const uniqueVideos = deduplicateVideos(data.videos);
+        
+          setVideos(uniqueVideos);
+          setSelectedVideo(uniqueVideos[0] ?? null);
           setAutoplay(false);
         }
-
         setNextPageToken(data.nextPageToken);
         setError(null);
       } catch (err) {
