@@ -34,6 +34,7 @@ const navLinks = [
     label: "Connect",
     href: "/connect",
     children: [
+      { label: "Social Connect", href: "/connect" },
       { label: "Service Ministries", href: "/service-ministries" },
       { label: "Upcoming Events", href: "/events" },
       { label: "Annual Calendar", href: "/events/calendar" },
